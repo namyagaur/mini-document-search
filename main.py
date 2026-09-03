@@ -1,9 +1,10 @@
 from pathlib import Path
-folder = Path("documents")
 
-print(folder)
-print(folder.exists())
-files = folder.glob("*.txt")
+folders = Path('documents')
+files = folders.glob('*.txt')
 
+def load_doc(p):
+    print(Path(p).read_text())
+    
 for file in files:
-    print(file.read_text())
+    load_doc(file)
