@@ -6,6 +6,4 @@ print(folder.exists())
 files = folder.glob("*.txt")
 
 for file in files:
-    with open(file,'r') as f:
-        text = f.read()
-    print(text)
+    print(file.read_text())
