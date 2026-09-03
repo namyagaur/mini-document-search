@@ -1,0 +1,19 @@
+Python is a high-level programming language.
+
+It was created by Guido van Rossum in 1991.
+
+Python is known for its simplicity and readability.
+
+It uses indentation to define code blocks.
+
+Python supports multiple programming paradigms.
+
+It has a large standard library for many tasks.
+
+Python is widely used in web development.
+
+It is popular in data science and machine learning.
+
+Python is cross-platform and open-source.
+
+Its community is huge and very supportive.
