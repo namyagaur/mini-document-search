@@ -19,3 +19,7 @@ def normalize_text(text):
 
     return text
 
+for d in documents:
+    d["text"] = normalize_text(d["text"])
+
+print(documents)
