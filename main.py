@@ -11,4 +11,11 @@ for file in files:
 
     })
 
-print(documents)
+# print(documents)
+
+def normalize_text(text):
+    res = text.strip()
+    text = res.lower()
+
+    return text
+
