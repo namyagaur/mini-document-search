@@ -3,8 +3,12 @@ from pathlib import Path
 folders = Path('documents')
 files = folders.glob('*.txt')
 
-def load_doc(p):
-    print(Path(p).read_text())
-    
+documents = []
 for file in files:
-    load_doc(file)
+    documents.append({
+        "source":file.name,
+        "text": file.read_text()
+
+    })
+
+print(documents)
