@@ -11,15 +11,19 @@ for file in files:
 
     })
 
-# print(documents)
-
-def normalize_text(text):
+def tokenize(text):
     res = text.strip()
     text = res.lower()
+    return text.split()
 
-    return text
 
 for d in documents:
-    d["text"] = normalize_text(d["text"])
+    d["tokens"] = tokenize(d["text"])
 
-print(documents)
+def process_query(query):
+    return query.strip().lower().split()
+
+query = input("Enter your query")
+
+print(process_query(query))
+
